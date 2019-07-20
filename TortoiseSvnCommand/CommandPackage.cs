@@ -42,7 +42,7 @@ namespace TortoiseSvnCommand
         /// <summary>
         /// CommandPackage GUID string.
         /// </summary>
-        public const string PackageGuidString = "b3a5e9c4-9be9-4f4c-bd89-4ff3afb3a296";
+        public const string PackageGuidString = "aaf15655-cc4e-4a86-a542-dfc5a0fbcc1c";
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CommandPackage"/> class.

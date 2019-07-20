@@ -23,7 +23,7 @@ namespace TortoiseSvnCommand
         /// <summary>
         /// Command menu group (command set GUID).
         /// </summary>
-        public static readonly Guid CommandSet = new Guid("33bc3dfc-09a0-4517-b7cd-61f8954516a0");
+        public static readonly Guid CommandSet = new Guid("b2373d6b-8909-4f77-801d-4723bce7b148");
 
         /// <summary>
         /// VS Package that provides this command, not null.
