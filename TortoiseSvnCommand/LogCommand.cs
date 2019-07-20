@@ -13,7 +13,7 @@ namespace TortoiseSvnCommand
     /// <summary>
     /// Command handler
     /// </summary>
-    internal sealed class Command
+    internal sealed class LogCommand
     {
         /// <summary>
         /// Command ID.
@@ -31,12 +31,12 @@ namespace TortoiseSvnCommand
         private readonly AsyncPackage package;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Command"/> class.
+        /// Initializes a new instance of the <see cref="LogCommand"/> class.
         /// Adds our command handlers for menu (commands must exist in the command table file)
         /// </summary>
         /// <param name="package">Owner package, not null.</param>
         /// <param name="commandService">Command service to add command to, not null.</param>
-        private Command(AsyncPackage package, OleMenuCommandService commandService)
+        private LogCommand(AsyncPackage package, OleMenuCommandService commandService)
         {
             this.package = package ?? throw new ArgumentNullException(nameof(package));
             commandService = commandService ?? throw new ArgumentNullException(nameof(commandService));
@@ -49,7 +49,7 @@ namespace TortoiseSvnCommand
         /// <summary>
         /// Gets the instance of the command.
         /// </summary>
-        public static Command Instance
+        public static LogCommand Instance
         {
             get;
             private set;
@@ -77,7 +77,7 @@ namespace TortoiseSvnCommand
             await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync(package.DisposalToken);
 
             OleMenuCommandService commandService = await package.GetServiceAsync((typeof(IMenuCommandService))) as OleMenuCommandService;
-            Instance = new Command(package, commandService);
+            Instance = new LogCommand(package, commandService);
         }
 
         /// <summary>
