@@ -130,4 +130,5 @@ namespace TortoiseSvnCommand
             proc.StartInfo.Arguments = "/command:log /path:\"" + fullPath + "\"";
             proc.Start();
         }
+    }
 }
