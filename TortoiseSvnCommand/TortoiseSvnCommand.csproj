@@ -54,6 +54,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BlameCommand.cs" />
     <Compile Include="Command.cs" />
     <Compile Include="CommandPackage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
