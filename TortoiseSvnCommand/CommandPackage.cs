@@ -71,6 +71,7 @@ namespace TortoiseSvnCommand
             await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
             await LogCommand.InitializeAsync(this);
             await BlameCommand.InitializeAsync(this);
+            await DiffCommand.InitializeAsync(this);
         }
 
         #endregion

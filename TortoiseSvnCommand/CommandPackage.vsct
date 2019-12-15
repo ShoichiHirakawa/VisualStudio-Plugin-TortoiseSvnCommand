@@ -69,8 +69,13 @@
         <Strings>
           <ButtonText>TortoiseSVNにて注釈履歴を確認</ButtonText>
         </Strings>
-      </Button>      
-
+      </Button>
+      <Button guid="guidCommandPackageCmdSet" id="DiffCommand" priority="0x0300" type="Button">
+        <Parent guid="guidCommandPackageCmdSet" id="MyMenuGroup" />
+        <Strings>
+          <ButtonText>TortoiseSVNにて差分を確認</ButtonText>
+        </Strings>
+      </Button>
     </Buttons>
 
     <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
@@ -93,6 +98,7 @@
       <IDSymbol name="MyMenuGroup" value="0x1020" />
       <IDSymbol name="LogCommand" value="0x0100" />
       <IDSymbol name="BlameCommand" value="0x0200" />
+      <IDSymbol name="DiffCommand" value="0x0300" />
     </GuidSymbol>
 
     <GuidSymbol name="guidImages" value="{7eab77a1-0fb5-41e0-ad77-802308b8eb49}">
