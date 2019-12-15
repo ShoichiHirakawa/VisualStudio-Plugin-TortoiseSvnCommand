@@ -70,6 +70,7 @@
   <ItemGroup>
     <VSCTCompile Include="CommandPackage.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
+      <SubType>Designer</SubType>
     </VSCTCompile>
     <Content Include="index.html" />
     <Content Include="License.txt">

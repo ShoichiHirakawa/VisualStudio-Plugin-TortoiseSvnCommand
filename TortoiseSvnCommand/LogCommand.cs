@@ -18,7 +18,7 @@ namespace TortoiseSvnCommand
         /// <summary>
         /// Command ID.
         /// </summary>
-        public const int CommandId = 0x0100;
+        public const int CommandId = 0x0200;
 
         /// <summary>
         /// Command menu group (command set GUID).
